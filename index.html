@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TIMER</h1>
+    </header>
+    <main>
+      <section>
+        <form id="timerForm">
+          <label>
+            <span>Enter timer interval (in sec.)</span>
+            <input type="number" name="interval" id="interval" min="0" />
+          </label>
+          <br />
+          <button class="one" type="submit">Start!</button>
+          <button class="one" type="button" id="pauseButton" disabled>
+            Pause
+          </button>
+          <button class="one" type="button" id="resumeButton" disabled>
+            Resume
+          </button>
+        </form>
+        <br />
+        <p style="font-size: 2rem; font-weight: 700">
+          <span id="timerRestH" style="display: none">0 h.</span>
+          <span id="timerRestM" style="display: none">0 m.</span>
+          <span id="timerRestS">0 s.</span>
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
